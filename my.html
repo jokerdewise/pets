@@ -1,0 +1,239 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title> Joseph Manumbu Pets </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/media/student/Chanx ipod/my website/image3.jpeg'); /* Add your background image path here */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the image */
+            color: #333; /* Set a default text color */
+        }
+
+        header {
+            background-color: rgba(52, 152, 219, 0.8); /* Semi-transparent background for readability */
+            color: white; /* Header text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgba(41, 128, 185, 0.8); /* Semi-transparent background for navbar */
+            display: flex;
+            justify-content: center; /* Center links */
+            padding: 15px;
+        }
+
+        nav a {
+            color: white; /* Link color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 20px; /* Spacing around links */
+            margin: 0 10px; /* Space between links */
+            transition: background-color 0.3s; /* Smooth background change */
+        }
+
+        nav a:hover {
+            background-color: #1f6393; /* Background on hover */
+        }
+
+        .container {
+            max-width: 800px; /* Max width of content */
+            margin: 20px auto; /* Center the container */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            display: none; /* Initially hide all sections */
+        }
+
+        h1, h2 {
+            color: #2980b9; /* Heading color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(52, 152, 219, 0.8); /* Semi-transparent footer background */
+            color: white; /* Footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            padding: 40px 0; /* Spacing for sections */
+        }
+
+        /* Gallery styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px; /* Rounded corners for images */
+        }
+
+        /* Map styles */
+        .map-container {
+            height: 400px; /* Fixed height for the map */
+            border-radius: 8px; /* Rounded corners for the map */
+            overflow: hidden; /* Ensure no overflow */
+        
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0; /* Remove border */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JOSEPH PET..</h1>
+        <p>JOSEPH MANUMBU PETS..</p>
+    </header>
+
+    <nav>
+
+        <a href="#home" class="icon-link" title="Home" onclick="showSection('home')">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="#about" class="icon-link" title="About Us" onclick="showSection('about')">
+            <i class="fas fa-info-circle"></i> About Us
+        </a>
+        <a href="#gallery" class="icon-link" title="Gallery" onclick="showSection('gallery')">
+            <i class="fas fa-images"></i> Gallery
+        </a>
+        <a href="#location" class="icon-link" title="Location" onclick="showSection('location')">
+            <i class="fas fa-map-marker-alt"></i> Location
+        </a>
+        <a href="#contact" class="icon-link" title="Contact" onclick="showSection('contact')">
+            <i class="fas fa-envelope"></i> Contact
+        </a>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>Welcome</h2>
+        <p>Welcome to Joseph Manumbu Pet Dogs! We are dedicated to providing you with the best pets for your homeWelcome to Joseph Manumbu Pets! We are delighted to have you here and excited to help you find your new furry companion. At Joseph Manumbu Pets, we are passionate about connecting families and individuals with the perfect dog to suit their lifestyle and needs. Our diverse selection includes various breeds, each carefully chosen for their temperament, health, and compatibility with different environments.
+
+           Our commitment to quality goes beyond just offering pets; we ensure that every dog is raised in a loving environment, receiving proper socialization and training from an early age. We provide detailed information on each breed’s characteristics, care requirements, and potential health considerations, so you can make an informed decision.
+
+           In addition to our exceptional dogs, we offer a range of services, including grooming, training tips, and ongoing support to help you and your new pet adjust and thrive together. Your satisfaction and the well-being of our pets are our top priorities. Thank you for choosing Joseph Manumbu Pets as your trusted partner in finding a loyal companion to enrich your life!.</p>
+    </div>
+
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>Joseph Manumbu Pet Dogs is a passionate and knowledgeable expert in the dog-selling industry. With years of experience, Joseph has cultivated a deep understanding of canine behavior, health, and breed characteristics. His commitment to animal welfare is evident in his meticulous approach to breeding and caring for each dog..</p>
+    </div>
+
+    <div class="container" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="image6.jpeg" alt="Dog 1">
+            <img src="image4.jpg" alt="Dog 2">
+            <img src="h3.jpeg" alt="Dog 3">
+            <img src="p2.jpeg" alt="Dog 4">
+           <img src="p3.jpg" alt="Dog 5">
+            <img src="p5.jpg" alt="Dog 6">
+            <img src="image2.jpeg" alt="Dog 7">
+            <img src="image1.jpeg" alt="Dog 8">
+            <img src="image5.jpeg" alt="Dog 9">
+            <img src="image6.jpeg" alt="Dog 10">
+            <img src="p9.jpeg" alt="Dog 11">
+        </div>
+    </div>
+
+    <div class="container" id="location">
+        <h2>Location</h2>
+        <p>Find us at:</p>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156168.8882121807!2d36.69009514098847!3d-3.3837066741033697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18535dd6439bff51%3A0xf0b401a48705ee3e!2sArusha%2C%20Morombo%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1630663754285!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+        <p><a href="https://www.google.com/maps?q=Arusha,+Ungalimited+District" target="_blank">View on Google Maps</a></p>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:manumbuprince@gmail.com">manumbuprince@gmail.com</a></p>
+        <p>Contact Numbers: 0753852455, 0753854255</p>
+        <p>view in google:ARUSHA,MOROMBO MARKET</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 JOSEPH MANUMBU PETS | <a href="#contact" style="color: white;">Contact Us</a></p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.container');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        // Show the home section by default
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('home');
+        });
+    </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa; /* Light background color */
+            padding: 10px;
+        }
+
+        .account-pic {
+            width: 50px; /* Adjust size as needed */
+            height: 50px; /* Adjust size as needed */
+            border-radius: 50%; /* Makes the image round */
+            margin-right: 10px; /* Space between image and text */
+        }   top-left:10px;
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="image6.jpeg" alt="Account Picture" class="account-pic">
+        <h1>JOSEPH MANUMBU PETS</h1>
+    </div>
+</body>
+</html>
+
+
+
